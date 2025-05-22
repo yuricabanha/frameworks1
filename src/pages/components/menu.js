@@ -17,6 +17,9 @@ export default function Menu() {
               <NavDropdown.Item href="/usestate">UseState</NavDropdown.Item>
               <NavDropdown.Item href="/useeffect">UseEffect</NavDropdown.Item>
             </NavDropdown>
+            <NavDropdown title='Noticia' id='noticia'>
+                <NavDropdown.Item href='/cadastro/noticia'>Cadastro Noticia</NavDropdown.Item>
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>
