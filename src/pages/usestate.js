@@ -20,5 +20,5 @@ function addCount(count) {
         setTimeout(() => {
             resolve(count);
         }, 1000);
-    })
+    });
 }
