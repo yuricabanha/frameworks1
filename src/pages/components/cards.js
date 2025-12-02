@@ -2,14 +2,14 @@ import { Card, Col } from "react-bootstrap";
 
 export default function Cards(noticia) {
     return <>
-        <Col key={noticia.idnoticia}>
+        <Col key={noticia._id}>
             <Card>
                 <Card.Header className="text-center fw-bold bg-warning-subtle">
-                    <a href={`/noticias/${noticia.idnoticia}`}>{noticia.titulonoticia}</a>
+                    <a href={`/noticias/${noticia._id}`}>{noticia.titulonoticia}</a>
                     </Card.Header>
                 <Card.Body>
                     <Card.Title className="text-capitalize">
-                       <a href={`/noticias/tipo/${noticia.tiponoticia}`}>{noticia.tiponoticia}</a> 
+                        <a href={`/noticias/tipo/${noticia.tiponoticia}`}>{noticia.tiponoticia}</a> 
                         </Card.Title>
                     <Card.Text> {noticia.conteudonoticia}</Card.Text>
                 </Card.Body>
