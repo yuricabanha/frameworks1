@@ -28,7 +28,6 @@ export default function Noticia() {
       if (!result.status)
         alert("Notícia não enviada ");
       alert("Notícia enviada com sucesso!");
-      window.location.reload()
     } catch (err) {
       alert("Erro ao enviar notícia.");
     }
