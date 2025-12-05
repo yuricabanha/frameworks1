@@ -25,6 +25,8 @@ export default function Noticia() {
       });
 
       const result = await response.json();
+      if (!result.status)
+        alert("Notícia não enviada ");
       alert("Notícia enviada com sucesso!");
     } catch (err) {
       alert("Erro ao enviar notícia.");
