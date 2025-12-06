@@ -13,7 +13,7 @@ export default function Page({ noticias }) {
       <Row xs={1} md={2} lg={3} className="g-4 pt-2">
         {Array.isArray(noticias) ?
           noticias.map(noticia =>
-            <Cards idnoticia={noticia.idnoticia} titulonoticia={noticia.titulonoticia}
+            <Cards _id={noticia._id} titulonoticia={noticia.titulonoticia}
               tiponoticia={noticia.tiponoticia} conteudonoticia={noticia.conteudonoticia}
               datahoracadastro={noticia.datahoracadastro} />
           ): "falso"}
