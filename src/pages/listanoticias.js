@@ -35,7 +35,7 @@ export default function Listanoticias({ noticias }) {
                     {
                         noticias.map(noticia =>
 
-                            <Tablelist key={noticia._id} idnoticia={noticia._id} /* alterar aqui */
+                            <Tablelist key={noticia._id} _id={noticia._id} /* alterar aqui */
                                 titulonoticia={noticia.titulonoticia}
                                 tiponoticia={noticia.tiponoticia}
                                 conteudonoticia={noticia.conteudonoticia}
